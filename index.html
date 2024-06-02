@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Galerisi Web Sitesi-1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .brush-container {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        
+        .brush path {
+            fill: #666;
+            transition: fill 0.3s ease;
+        }
+        
+        .brush-container:hover .brush path {
+            fill: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <ul>
+                <li><a href="#" class="active">Ana Sayfa</a></li> 
+                <li><a href="#" id="aboutBtn">Hakkımızda</a></li> 
+                <li><a href="#" id="servicesBtn">Hizmetler</a></li> 
+                <li><a href="#" id="productsBtn">Ürünler</a></li> 
+                <li><a href="#" id="contactBtn">İletişim</a></li> 
+            </ul>
+        </div>
+        <div class="center">
+            <h1>Sanat Galerisi Sitesine</h1>
+            <h2>HOŞGELDİNİZ</h2>
+            <div class="buttons">
+                <button id="moreBtn">Daha Faslası İçin tıklayın</button>
+                <button id="subscribeBtn">Abone Olun</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<div class="gallery-container">
+    <img src="Foto_1652119639.jpg" alt="Son Akşam Yemeği" id="sonAkşamYemeğiBtn">
+    <img src="indir (1).jpeg" alt="Mona Lisa" id="monaLisaBtn">
+    <img src="indir.jpeg" alt="Yıldızlı Gece" id="yildizliGeceBtn">
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> 
+<div class="brush-container">
+    <svg class="brush" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <path d="M10,80 Q50,-30 90,80" stroke="#333" stroke-width="10" fill="transparent"/>
+    </svg>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
